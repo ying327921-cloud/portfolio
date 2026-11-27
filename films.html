@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- 核心 SEO 設定 -->
+<title>影片與短影音 | Jenny Liao</title>
+<meta content="影片與短影音｜Jenny Liao 個人作品與專案成果" name="description"/>
+<meta content="數位成長與營運經理, 行銷營運經理, SEO優化, AEO優化, 品牌成長策略, 商業數據分析, 傳產數位轉型, 台中行銷主管, 商業攝影, 視覺設計, Jenny Liao, 廖佳瑩" name="keywords"/>
+<meta content="Jia Ying Liao (Jenny Liao)" name="author"/>
+<meta content="index, follow" name="robots"/>
+<!-- 大公司標準多語系 SEO (hreflang) 設定 -->
+<link href="https://ying327921-cloud.github.io/portfolio/films.html" rel="canonical"/>
+
+
+<!-- Open Graph 社群分享預覽 -->
+<meta content="profile" property="og:type"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="影片與短影音 | Jenny Liao" property="og:title"/>
+<meta content="影片與短影音｜Jenny Liao 個人作品與專案成果" property="og:description"/>
+<meta content="https://ying327921-cloud.github.io/portfolio/films.html" property="og:url"/>
+<!-- 結構化資料 (JSON-LD) -->
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;family=Bodoni+Moda:ital,wght@1,400&amp;family=Inter:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header>
+<div class="container nav-inner">
+<a class="brand-logo" href="index.html">
+<span></span>Jenny Liao 廖佳瑩
+      </a>
+<div class="nav-right">
+<nav aria-label="主要導覽">
+<ul><li><a href="index.html#analytics">成長實績</a></li><li><a href="design.html">品牌設計與成品</a></li><li><a href="reports.html">成果發表與簡報</a></li><li><a href="films.html">影片與短影音</a></li><li><a href="photos.html">商業攝影作品</a></li><li><a href="index.html#experience">職涯</a></li><li><a href="index.html#contact">聯繫</a></li></ul>
+</nav>
+<!-- 企業級三語系切換器 -->
+<div aria-label="語言切換" class="lang-switcher">
+<a aria-current="page" class="lang-btn active" href="index.html">繁中</a>
+<span aria-disabled="true" class="lang-btn" title="翻譯頁尚未提供">EN（待補）</span>
+<span aria-disabled="true" class="lang-btn" title="翻譯頁尚未提供">한국어（待補）</span>
+</div>
+</div>
+</div>
+</header>
+<main><section><div class="container"><a class="detail-link" href="index.html">← 返回首頁</a><div class="section-kicker">SELECTED PORTFOLIO</div><h1 style="font-size:clamp(2rem,5vw,4rem)">影片與短影音</h1><p>專案成果與原始作品展示</p><div class="library-grid"><article class="case-card" data-category="video" id="case-2">
+<div class="media-slot">原始作品素材待上傳<br/><small>此處預留實際圖片、影片或簡報展示位置</small></div>
+<div class="case-body">
+<h3>【乾式換門工法】Reels 破 290 萬次自然觀看</h3>
+<p class="case-meta"><strong>挑戰：</strong>工程施工痛點（怕吵、怕髒、工期長）難以透過傳統圖文讓屋主直覺理解。</p>
+<p class="case-meta"><strong>策略：</strong>獨立企劃腳本、現場拍攝與節奏剪輯，用「一天完工 Before/After」強對比直擊屋主痛點。</p>
+<div class="case-result">成果：累積 290 萬+ 觀看，帶動官方 LINE 諮詢轉化率提升 6.6 倍</div>
+</div>
+</article></div></div></section></main>
+<div aria-hidden="true" class="cis-strip"><span></span><span></span><span></span><span></span></div><footer>
+<div class="container">
+<p>© 2026 Jia Ying Liao (Jenny Liao)｜數位成長與營運經理個人履歷網站．Multilingual SEO &amp; AEO Portfolio.</p>
+</div>
+</footer>
+<script>
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      document.getElementById('scrollProgress').style.width = (scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0) + '%';
+    });
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const caseCards = document.querySelectorAll('.case-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {b.classList.remove('active'); b.setAttribute('aria-pressed','false');}); btn.setAttribute('aria-pressed','true');
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        caseCards.forEach(card => {
+          card.classList.toggle('hidden', filter !== 'all' && card.getAttribute('data-category') !== filter);
+        });
+      });
+    });
+  </script>
+<script>const counters=document.querySelectorAll('[data-target]');function count(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;let start;function tick(t){start??=t;let p=Math.min((t-start)/1800,1),e=1-(1-p)**3;counters.forEach(el=>el.textContent=el.dataset.prefix+(+el.dataset.target*e).toFixed(+el.dataset.decimal)+el.dataset.suffix);if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}if(counters.length&&'IntersectionObserver'in window){const o=new IntersectionObserver(entries=>{if(entries.some(x=>x.isIntersecting)){count();o.disconnect()}},{threshold:.2});o.observe(document.querySelector('#impact'))}</script></body>
+</html>
